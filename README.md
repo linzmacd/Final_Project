@@ -20,7 +20,3 @@ Our source data comes from two datasets found on Kaggle:
 ### Communication Protocols
 
 We will communicate primarily on Slack but will also utilize Zoom for meetings and GoogleDocs for sharing files. 
-
-### Role Assignments
-
-While we 
