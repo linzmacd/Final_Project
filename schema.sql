@@ -1,7 +1,7 @@
 CREATE TABLE county (
 	CensusId int,
-	State varchar(100),
-	County varchar(100), 
+	State varchar(50),
+	County varchar(50), 
 	TotalPop int,
 	Men int,
 	Women int,
