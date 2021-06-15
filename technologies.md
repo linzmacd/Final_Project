@@ -14,4 +14,4 @@ SciKitLearn is the Machine Learning library we'll be using to create a classifie
 
 ## Dashboard
 
-We will create an interactive dashboard with JavaScript, containing embedded visualizations from Tableau and hosted on GitHub.
+JavaScript will be used to create an interactive dashboard containing embedded visualizations from Tableau and hosted on GitHub.
