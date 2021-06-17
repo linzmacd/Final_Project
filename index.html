@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Murder Solve Rates</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+</head>
+
+<body>
+  <div class="container">
+
+    <!--JUMBOTRON-->
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Would Your Murder Be Solved?</h1>
+        <p>An interactive dashboard with crime solve rate data</p>
+      </div>
+    </div>
+    <!--INTRO-->
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Description of project goes here.<br><br><br></h4>
+      </div>
+    </div>
+
+    <!-- TABLEAU STORY
+    <div class="row">
+      <div class="col-md-12">
+        <div class='tableauPlaceholder' id='viz1623782015277' style='position: relative'><noscript>
+          <a href='#'>
+            <img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='MurderData_16237819954260&#47;Sheet1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Sheet1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1623782015277');                    
+          var vizElement = divElement.getElementsByTagName('object')[0];                    
+          vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script><br><br>
+      </div>
+    </div> -->
+
+    <!-- FILTERABLE TABLE -->
+    <div class="row">
+      <div class="col-md-3">
+        <form class="filters">
+          <h2>Filter Search</h2>
+          <ul class="list-group">
+              <li class="list-group-item">
+                  <label for="Sex">Enter Gender</label>
+                  <input type="text" placeholder="Male, Female, Unknown" id="Sex" />
+              </li>
+              <li class="list-group-item">
+                  <label for="Age">Enter Age</label>
+                  <input type="text" placeholder="35" id="Age" />
+              </li>
+              <li class="list-group-item">
+                  <label for="Race">Enter Race</label>
+                  <input type="text" placeholder="White, Black, Asian/Pacific Islander, Native American/Alaska Native, Unknown" id="Race" />
+              </li>
+              <li class="list-group-item">
+                  <label for="Ethnicity">Enter Ethnicity</label>
+                  <input type="text" placeholder="Not Hispanic, Hispanic, Unknown" id="Ethnicity" />
+              </li>
+              <li class="list-group-item">
+                  <label for="County">Enter County</label>
+                  <input type="text" placeholder="San Francisco" id="County" />
+              </li>
+          </ul>
+          <h2>Solve Rate</h2>
+          <h2><rate></rate></h2>
+        </form>
+      </div>
+      <div class="col-md-9">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Race</th>
+                    <th>Ethnicity</th>
+                    <th>County</th>
+                    <th>Solved?</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!--12 column-->
+    <div class="row">
+      <div class="col-md-12">
+        <div id=""></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+  <script src="static/js/murders.js"></script>
+  <script src="static/js/app.js"></script>
+
+</body>
+
+</html>
