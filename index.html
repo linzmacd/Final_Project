@@ -23,6 +23,7 @@
         <p>An interactive dashboard with crime solve rate data</p>
       </div>
     </div>
+    
     <!--INTRO-->
     <div class="row">
       <div class="col-md-12">
@@ -66,28 +67,40 @@
       <div class="col-md-3">
         <form class="filters">
           <h2>Filter Search</h2>
-          <ul class="list-group">
-              <li class="list-group-item">
-                  <label for="Sex">Enter Gender</label>
-                  <input type="text" placeholder="Male, Female, Unknown" id="Sex" />
-              </li>
-              <li class="list-group-item">
-                  <label for="Age">Enter Age</label>
-                  <input type="text" placeholder="35" id="Age" />
-              </li>
-              <li class="list-group-item">
-                  <label for="Race">Enter Race</label>
-                  <input type="text" placeholder="White, Black, Asian/Pacific Islander, Native American/Alaska Native, Unknown" id="Race" />
-              </li>
-              <li class="list-group-item">
-                  <label for="Ethnicity">Enter Ethnicity</label>
-                  <input type="text" placeholder="Not Hispanic, Hispanic, Unknown" id="Ethnicity" />
-              </li>
-              <li class="list-group-item">
-                  <label for="County">Enter County</label>
-                  <input type="text" placeholder="San Francisco" id="County" />
-              </li>
-          </ul>
+          <div class="well">
+            <h5>Gender:</h5>
+            <select name="Gender" id="Sex">
+              <option value=""><i>select</i></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+            <br><br>
+            <h5>Age:</h5> 
+            <input type="text" placeholder="enter" id="Age">
+            <br><br>
+            <h5>Race:</h5>
+            <select name="Race" id="Race">
+              <option value=""><i>select</i></option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+              <option value="Asian/Pacific Islander">Asian/Pacific Islander</option>
+              <option value="Native American/Alaska Native">Native American/Alaska Native</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+            <br><br>
+            <h5>Ethnicity:</h5>
+            <select name="Age" id="Ethnicity">
+              <option value=""><i>select</i></option>
+              <option value="Hispanic">Hispanic</option>
+              <option value="Not Hispanic">Not Hispanic</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+            <br><br>
+            <h5>County:</h5>
+            <input type="text" placeholder="enter" id="County">
+            <br><br>
+          </div>
           <h2>Solve Rate</h2>
           <h2><rate></rate></h2>
         </form>
