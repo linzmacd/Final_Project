@@ -1,0 +1,21 @@
+.jumbotron {
+  background-image: url("../images/blooddrip.jpg");
+  color: black;
+  font-family: "Impact";
+  text-align: center;
+  text-shadow: /* Outline */
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white,
+  1px 1px 0 white,  
+  -2px 0 0 white,
+  2px 0 0 white,
+  0 2px 0 white,
+  0 -2px 0 white;
+}
+.jumbotron h1 {
+    font-size: 72px;
+}
+.jumbotron p {
+    font-size: 32px;
+}
