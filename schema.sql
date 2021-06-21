@@ -49,8 +49,4 @@ CREATE TABLE murders (
 
 SELECT c.CensusId, c.County, c.TotalPop, c.Men, c.Women, c.Hispanic, c.White, c.Black, 
 c.Native, c.Asian, c.Pacific, c.Citizen, c.Income, c.IncomeErr, c.IncomePerCap, c.IncomePerCapErr, 
-c.Poverty, c.ChildPoverty, c.Employed, c.Unemployment
-INTO murders_by_dem
-FROM county as c
-INNER JOIN murders
-ON murders.County = c.County;
+
