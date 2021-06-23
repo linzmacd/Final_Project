@@ -1,13 +1,14 @@
-# How to Not Get Murdered
-## A Data Analyst's Guide
+# Would Your Murder Be Solved?
 
-### Project Overview
+## Project Overview
 
 We have selected the influence of demographics on the homicide solve rate in California as the topic for our final group project. In getting to know one another we found that we have a shared fondness for true crime documentaries and thought it would be interesting to look into trends in the solve rates for homicide cases in our home state. More specifically we hope to answer the following questions:
 
 - Is there a correlation between the personal attributes of the victim and the solve rate? 
 - Is there a correlation between county demographics where the murder occurred and the solve rate?
-- Can we develop a machine learning model that predicts whether or not a crime would be solved given hypothetical sets of circumstances?
+- Can we develop a machine learning model that predicts whether or not a crime would be solved given a hypothetical set of circumstances?
+
+## Data Sources
 
 Our source data comes from two datasets found on Kaggle:
 1. [U.S. Homicide Reports, 1980-2014](https://www.kaggle.com/jyzaguirre/us-homicide-reports): 24 columns, 
@@ -17,24 +18,40 @@ Our source data comes from two datasets found on Kaggle:
 	- 37 columns (2 string, 35 numerical)
 	- 3220 rows
 
-### Communication Protocols
+## Communication Protocols
 
-We will communicate primarily on Slack but will also utilize Zoom for meetings and GoogleDocs for sharing files. 
+We will communicate primarily on Slack, host group meetings on Zoom, and share files using GoogleDocs. 
 
-### Technologies Used
+## Technologies Used
 
-#### Data Cleaning & Analysis
+- Data Cleaning & Analysis
+	- Pandas
+	- Matplotlib
 
-Pandas will be used to clean data and perform exploratory analysis.
+- Database Storage & Connectivity
+	- PostGreSQL
+	- Amazon Web Services
+	- Psycopg2
 
-#### Database Storage
+- Machine Learning
+	- SciKitLearn
+	- TensorFlow
 
-PostGreSQL will be used to store the cleaned data.
+- Dashboard
+	- Tableau
+	- JavaScript
+	- HTML
+	- CSS
+	- D3
 
-#### Machine Learning
+## Machine Learning Model
 
-SciKitLearn is the Machine Learning library we'll be using to create a classifier. 
+## Presentation
 
-#### Dashboard
+Our presentation can be found [here](https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing)
 
-JavaScript will be used to create an interactive dashboard containing embedded visualizations from Tableau and hosted on GitHub.
+## Dashboard
+
+Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive  filterable table.
+
+![Resources/header.PNG](Resources/header.PNG)
