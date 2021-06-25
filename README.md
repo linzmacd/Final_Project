@@ -44,14 +44,22 @@ We will communicate primarily on Slack, host group meetings on Zoom, and share f
 	- CSS
 	- D3
 
+## Database
+
+After performing some initial cleaning and restructuring of the data using Python Pandas, the datasets were exported to pre-defined PostGreSQL tables. The tables were then joined producing our final merged dataset which was uploaded to a Amazon Web services S3 bucket where it was accessible to all team members for further analysis.    
+
 ## Machine Learning Model
+
+The merged dataset was imported from AWS and preprocessed for training machine learning models. In addition to removing several unneccessary columns, several categories were binned and others were encoded binarily. The data was divided into target and features data, split into training and testing datasets, and scaled. 
+
+Random forest, logistic regression, and deep neural net models were run on the dataset and it was determined that the models were overfitting the data. A filtered dataset was then created containing only the categories that proved to be the most important factors in predicting an outcome. Running the models on the less noisy dataset gave accuracies of about 0.8. 
 
 ## Presentation
 
-Our presentation can be found [here](https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing)
+Our final presentation and notecards can be found [here](https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing)
 
 ## Dashboard
 
-Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive  filterable table.
+Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive filterable table.
 
-![Resources/header.PNG](Resources/header.PNG)
+![Resources/header.PNG](https://linzmacd.github.io/Final_Project/)
