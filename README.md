@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-We have selected the influence of demographics on the homicide solve rate in California as the topic for our final group project. In getting to know one another we found that we have a shared fondness for true crime documentaries and thought it would be interesting to look into trends in the solve rates for homicide cases in our home state. More specifically we hope to answer the following questions:
+We have selected the influence of demographics on the homicide solve rate in California as the topic for our final group project. In getting to know one another we found that we have a shared fondness for true crime documentaries and thought it would be interesting to investigate trends in solve rates for homicide cases in our home state. More specifically we hope to answer the following questions:
 
 - Is there a correlation between the personal attributes of the victim and the solve rate? 
 - Is there a correlation between county demographics where the murder occurred and the solve rate?
@@ -50,7 +50,7 @@ After performing some initial cleaning and restructuring of the data using Pytho
 
 ## Machine Learning Model
 
-The merged dataset was imported from AWS and preprocessed for training machine learning models. In addition to removing several unneccessary columns, several categories were binned and others were encoded binarily. The data was divided into target and features data, split into training and testing datasets, and scaled. 
+The merged dataset was imported from AWS and preprocessed for training machine learning models. In addition to removing several unnecessary columns, several categories were binned and others were encoded binarily. The data was divided into target and features data, split into training and testing datasets, and scaled. 
 
 Random forest, logistic regression, and deep neural net models were run on the dataset and it was determined that the models were overfitting the data. A filtered dataset was then created containing victim demographics. Running the models on the less noisy dataset gave accuracies of about 0.8. 	
 
