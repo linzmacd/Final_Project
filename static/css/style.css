@@ -19,3 +19,15 @@
 .jumbotron p {
     font-size: 32px;
 }
+
+.Intro h4 {
+  background-color: lightgrey;
+  border: 2px solid darkred;
+
+}
+
+.ML {
+  background-color: lightgrey;
+  border: 2px solid darkred;
+}
+
