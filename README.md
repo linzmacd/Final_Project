@@ -62,4 +62,4 @@ Our final presentation and notecards can be found [here](https://docs.google.com
 
 Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive filterable table.
 
-![Resources/header.PNG](https://linzmacd.github.io/Final_Project/)
+<a href="https://linzmacd.github.io/Final_Project/"><img src="Resources/header.PNG"></img></a>
