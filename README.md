@@ -56,10 +56,10 @@ Random forest, logistic regression, and deep neural net models were run on the d
 
 ## Presentation
 
-Our final presentation and notecards can be found [here](https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing)
+Our final presentation and notecards can be found <a href="https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing" target="_blank">here</a>
 
 ## Dashboard
 
 Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive filterable table.
 
-<a href="https://linzmacd.github.io/Final_Project/"><img src="Resources/header.PNG"></img></a>
+<a href="https://linzmacd.github.io/Final_Project/" target="_blank"><img src="Resources/header.PNG"></img></a>
