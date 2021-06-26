@@ -1,13 +1,14 @@
-# How to Not Get Murdered
-## A Data Analyst's Guide
+# Would Your Murder Be Solved?
 
-### Project Overview
+## Project Overview
 
-We have selected the influence of demographics on the homicide solve rate in California as the topic for our final group project. In getting to know one another we found that we have a shared fondness for true crime documentaries and thought it would be interesting to look into trends in the solve rates for homicide cases in our home state. More specifically we hope to answer the following questions:
+We have selected the influence of demographics on the homicide solve rate in California as the topic for our final group project. In getting to know one another we found that we have a shared fondness for true crime documentaries and thought it would be interesting to investigate trends in solve rates for homicide cases in our home state. More specifically we hope to answer the following questions:
 
 - Is there a correlation between the personal attributes of the victim and the solve rate? 
 - Is there a correlation between county demographics where the murder occurred and the solve rate?
-- Can we develop a machine learning model that predicts whether or not a crime would be solved given hypothetical sets of circumstances?
+- Can we develop a machine learning model that predicts whether a crime would be solved given a hypothetical set of circumstances?
+
+## Data Sources
 
 Our source data comes from two datasets found on Kaggle:
 1. [U.S. Homicide Reports, 1980-2014](https://www.kaggle.com/jyzaguirre/us-homicide-reports): 24 columns, 
@@ -17,24 +18,48 @@ Our source data comes from two datasets found on Kaggle:
 	- 37 columns (2 string, 35 numerical)
 	- 3220 rows
 
-### Communication Protocols
+## Communication Protocols
 
-We will communicate primarily on Slack but will also utilize Zoom for meetings and GoogleDocs for sharing files. 
+We will communicate primarily on Slack, host group meetings on Zoom, and share files using GoogleDocs. 
 
-### Technologies Used
+## Technologies Used
 
-#### Data Cleaning & Analysis
+- Data Cleaning & Analysis
+	- Pandas
+	- Matplotlib
 
-Pandas will be used to clean data and perform exploratory analysis.
+- Database Storage & Connectivity
+	- PostGreSQL
+	- Amazon Web Services
+	- Psycopg2
 
-#### Database Storage
+- Machine Learning
+	- SciKitLearn
+	- TensorFlow
 
-PostGreSQL will be used to store the cleaned data.
+- Dashboard
+	- Tableau
+	- JavaScript
+	- HTML
+	- CSS
+	- D3
 
-#### Machine Learning
+## Database
 
-SciKitLearn is the Machine Learning library we'll be using to create a classifier. 
+After performing some initial cleaning and restructuring of the data using Python Pandas, the datasets were exported to pre-defined PostGreSQL tables. The tables were then joined, producing our final merged dataset which was uploaded to an Amazon Web services S3 bucket where it was accessible to all team members for further analysis.    
 
-#### Dashboard
+## Machine Learning Model
 
-JavaScript will be used to create an interactive dashboard containing embedded visualizations from Tableau and hosted on GitHub.
+The merged dataset was imported from AWS and preprocessed for training machine learning models. In addition to removing several unnecessary columns, several categories were binned and others were encoded binarily. The data was divided into target and features data, split into training and testing datasets, and scaled. 
+
+Random forest, logistic regression, and deep neural net models were run on the dataset and it was determined that the models were overfitting the data. A filtered dataset was then created containing victim demographics. Running the models on the less noisy dataset gave accuracies of about 0.8. 	
+
+## Presentation
+
+Our final presentation and notecards can be found <a href="https://docs.google.com/presentation/d/1gGgPeMOnQAjWxVcXPcwtUPPKCR3fbvde0NED2Ms2uRk/edit?usp=sharing">here</a>
+
+## Dashboard
+
+Our dashboard can be found [here](https://linzmacd.github.io/Final_Project/) and contains a Tableau story as well as an interactive filterable table.
+
+<a href="https://linzmacd.github.io/Final_Project/"><img src="Resources/header.PNG"></img></a>
