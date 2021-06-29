@@ -26,7 +26,7 @@
     
     <!--INTRO-->
     
-    <div class="row">
+    <div class="row" id="Intro_Section">
       <div class="col-md-12 Intro">
         <h4><center>Welcome to our 'true crime' webpage! A data analytics project designed by members of UC Berkeley Extension, <br><a href='https://github.com/linzmacd' style="color: #cc0000">Lindsay,</a> 
           <a href='https://github.com/lgodleski'style="color: #cc0000">Laura</a> and <a href='https://github.com/npvandyke'style="color: #cc0000">Natalie.</a><br><br>
@@ -50,7 +50,16 @@
     <!-- TABLEAU STORY -->
     <div class="row">
       <div class="col-md-12">
-        <div class='tableauPlaceholder' id='viz1624418730934' style='position: relative'><noscript><a href='#'><img alt='The Demographics of Murder ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MurderData_16237819954260&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624418730934');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <div class='tableauPlaceholder' id='viz1624418730934' style='position: relative'><noscript><a href='#'><img alt='The Demographics of Murder ' 
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' 
+          style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' 
+          value='MurderData_16237819954260&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MurderData_16237819954260&#47;Story1&#47;1.png' /> 
+          <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>            
+              <script type='text/javascript'>                    var divElement = document.getElementById('viz1624418730934');                    var vizElement = divElement.getElementsByTagName('object')[0];      
+                            vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');           
+                                     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         <br><br>
       </div>
     </div>
@@ -59,10 +68,21 @@
     
   <div class="row">
     <div class="col-md-12 ML">
+      <h3><center><b>Machine Learning Analysis</b></center></h3>
+    </div>
+    <div class="col-md-6 ML">
       <div id="ml_section"></div>
-      <h3><center><b>Machine Learning Analysis Section</b></center></h3>
+      <h4> Using Python’s scikit-learn library, we trained random forest classification and regression machine-learning models on the combined
+         <a class=’nav-link’ href= "#Intro_Section" style="color: #cc0000">Kaggle datasets</a> to predict the likelihood of a case being solved based on various aspects of the crime- including victim demographics, 
+         perpetrator demographics, murder weapon, and location demographics. The regression model predicts a percent likelihood of the case being solved, where the classification model predicts a binary ‘solved' or 'unsolved' 
+         outcome. <br><br>
+         The graph to the right displays a ranking of the most important aspects of the crime in determining the outcome for the classification model. A link to the code used for creating, training and running the machine
+          learning models can be found <a href='https://github.com/linzmacd/Final_Project/blob/main/Google_Colab/murder_ml.ipynb'style="color: #cc0000">here.</a>
+        <br><br><br><br>
+      </h4>
+    </div>
+    <div class="col-md-6 ML">
       <img src="static/images/features.png" alt="Random Forest Feature Ranking" width="500" height="300">
-      <h4> Write stuff about the machine learning analysis here!!!</h4>
     </div>
   </div><br>
 
