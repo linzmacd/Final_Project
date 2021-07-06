@@ -1,0 +1,9 @@
+Pandas==1.2.4
+
+Matplotlib==3.3.4
+
+Psycopg2==2.8.6
+
+Scikitlearn==0.24.1
+
+Tensorflow==2.5.0 
